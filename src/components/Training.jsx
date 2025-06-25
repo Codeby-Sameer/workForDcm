@@ -1,142 +1,79 @@
-import Footer from "./footer"
+import Footer from "./footer";
+import data from "../data/data.json"
+const Trainings = () => {
 
-const Trainings=()=>{
-    console.log("iam sam")
-    return <>
-
-{/* <!--body content wrap start--> */}
-<div class="main">
-
-    {/* <!--header section start--> */}
-    <section class="hero-section ptb-100 gradient-overlay"
-             style={{background: "url('img/header-bg-5.jpg')no-repeat center center / cover"}}>
-        <div class="hero-bottom-shape-two" style={{background: "url('img/hero-bottom-shape.svg')no-repeat bottom center"}}></div>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-7">
-                    <div class="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
-                        <h1 class="text-white mb-0">Our Trainings</h1>
-                        <div class="custom-breadcrumb">
-                            <ol class="breadcrumb d-inline-block bg-transparent list-inline py-0">
-                                <li class="list-inline-item breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="list-inline-item breadcrumb-item"><a href="#">Pages</a></li>
-                                <li class="list-inline-item breadcrumb-item active">Services</li>
-                            </ol>
-                        </div>
-                    </div>
+  const courses =data.courses
+  
+ 
+  return (
+    <>
+      <div className="main">
+        {/* Header section */}
+        <section
+          className="hero-section ptb-100 gradient-overlay"
+          style={{
+            background: "url('img/header-bg-5.jpg') no-repeat center center / cover",
+          }}
+        >
+          <div
+            className="hero-bottom-shape-two"
+            style={{
+              background: "url('img/hero-bottom-shape.svg') no-repeat bottom center",
+            }}
+          ></div>
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-8 col-lg-7">
+                <div className="page-header-content text-white text-center pt-sm-5 pt-md-5 pt-lg-0">
+                  <h1 className="text-white mb-0">Our Trainings</h1>
                 </div>
+              </div>
             </div>
-        </div>
-    </section>
-    {/* <!--header section end--> */}
+          </div>
+        </section>
 
-    
-    {/* <!--services section start--> */}
-    <section class="services-section ptb-100 gray-light-bg">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="section-heading text-center mb-5">
-                        <h2>We Provide Best Trainings</h2>
-                        <p class="lead">Efficiently aggregate end-to-end core competencies without maintainable ideas. Dynamically
-                            foster tactical solutions without enabled value.</p>
-                    </div>
+        {/* Courses */}
+        <section className="services-section ptb-100 gray-light-bg">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-md-8">
+                <div className="section-heading text-center mb-5">
+                  <h2>We Provide Best Trainings</h2>
+                  <p className="lead">
+                    Efficiently aggregate end-to-end core competencies without maintainable ideas. Dynamically
+                    foster tactical solutions without enabled value.
+                  </p>
                 </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/java-svgrepo-com.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Java Full stack</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
+
+            <div className="row">
+              {courses.map((course, index) => (
+                <div className="col-lg-4 col-md-6 col-sm-6" key={index}>
+                  <div className="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
+                    <img src={course.img} alt={course.title} width="80" className="mb-3" />
+                    <h5>{course.title}</h5>
+                    
+                    <p className="mb-2">{course.description}</p>
+                    <a
+                      href="services-details.html"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="detail-link mt-4"
+                    >
+                      Get Course <span className="ti-arrow-right"></span>
+                    </a>
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/machine-learning.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Machine Learning</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/data-analytics.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Data Analytics</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/data-security.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Data Security</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/artificial-intelligence.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Artificial Intelligence</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/react-svgrepo-com.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>React Js</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/web-development-svgrepo-com.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Web Development</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/nodejs-1-logo-svgrepo-com.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Node Js</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="services-single animated-hover text-center p-5 my-md-3 my-lg-3 my-sm-0 shadow-sm white-bg rounded">
-                        <img src="img/javascript-svgrepo-com.svg" alt="consulting" width="80" class="mb-3"/>
-                        <h5>Java Script</h5>
-                        <p class="mb-0">Progressively empower business "outside the box" thinking with resource-leveling
-                            partnerships.</p>
-                        <a href="services-details.html" target="_blank" class="detail-link mt-4">Get Course <span class="ti-arrow-right"></span></a>
-                    </div>
-                </div>
+              ))}
             </div>
-            
-        </div>
-    </section>
-   
+          </div>
+        </section>
+      </div>
 
-
-
-
-</div>
-{/* <!--body content wrap end--> */}
-<Footer></Footer>
+      <Footer />
     </>
-}
-export default Trainings
+  );
+};
+
+export default Trainings;

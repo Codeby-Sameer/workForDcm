@@ -5,9 +5,8 @@ const AboutUs=()=>{
 
 
   useEffect(() => {
-    // Wait for DOM to be ready, then initialize Owl
     const initCarousel = () => {
-      if (window.$ && window.$('.owl-carousel').length > 0) {
+      if (window.$ && typeof window.$.fn.owlCarousel === 'function') {
         window.$('.owl-carousel').owlCarousel({
           loop: true,
           margin: 10,
@@ -15,16 +14,16 @@ const AboutUs=()=>{
           items: 1,
           autoplay: true,
         });
+      } else {
+        setTimeout(initCarousel, 100); // retry until ready
       }
     };
 
-    // Run after short delay to ensure DOM is ready
-    setTimeout(initCarousel, 100); 
-
+    initCarousel(); // call when AboutUs mounts
   }, []);
 
 
-
+  
 
     return<>
         <div class="main">
