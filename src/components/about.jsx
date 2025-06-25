@@ -1,6 +1,31 @@
 import Footer from "./footer"
+import { useEffect } from 'react';
 
 const AboutUs=()=>{
+
+
+  useEffect(() => {
+    // Wait for DOM to be ready, then initialize Owl
+    const initCarousel = () => {
+      if (window.$ && window.$('.owl-carousel').length > 0) {
+        window.$('.owl-carousel').owlCarousel({
+          loop: true,
+          margin: 10,
+          nav: true,
+          items: 1,
+          autoplay: true,
+        });
+      }
+    };
+
+    // Run after short delay to ensure DOM is ready
+    setTimeout(initCarousel, 100); 
+
+  }, []);
+
+
+
+
     return<>
         <div class="main">
 
@@ -105,10 +130,10 @@ const AboutUs=()=>{
                 </div>
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="work-process-wrap text-center">
+                        <div class="work-process-wrap text-start">
                             <div class="single-work-process ">
 
-                                <div class="work-process-content mt-4">
+                                <div class="work-process-content mt-4 ">
                                     <h5> First-Class Business Solutions</h5>
                                     <p>We deliver strategic solutions that enhance organizational performance and
                                         productivity. From leadership development to workflow optimization, our services
@@ -127,7 +152,7 @@ const AboutUs=()=>{
                             <div class="single-work-process">
 
                                 <div class="work-process-content mt-4">
-                                    <h5>Consulting for Growth</h5>
+                                    <h5>Consulting services for Growth</h5>
                                     <p>Our consultants bring real-world expertise to help companies streamline
                                         operations, improve decision-making, and build scalable business models.</p>
                                 </div>

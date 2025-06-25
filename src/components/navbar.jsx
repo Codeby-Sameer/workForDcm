@@ -34,7 +34,7 @@ const Navbar=()=>{
                         </li>
                         <li><a href="services.html" class="dropdown-toggle">Services</a>
                              <ul class="sub-menu">
-                            <li><a href="team.html">Consultancy</a></li>
+                            <li><a href="team.html">Consultancy Services </a></li>
                             <li><a href="team-single.html">Manpower Support</a></li>
                              </ul>
                         

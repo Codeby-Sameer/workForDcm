@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 const Signup=()=>{
     return <>
     <div class="main">
@@ -73,14 +75,14 @@ const Signup=()=>{
                                 </div>
 
                                 {/* <!-- Submit --> */}
-                                <button class="btn btn-block secondary-solid-btn border-radius mt-4 mb-3">
+                                <button class=" btn-block secondary-solid-btn rounded-2  mt-4 mb-3">
                                     Sign up
                                 </button>
                             </form>
 
                         </div>
                         <div class="card-footer px-md-5 bg-transparent border-top"><small>Already have an acocunt?</small>
-                            <a href="login.html" class="small">Sign in</a></div>
+                            <Link to='/login'>Sign in</Link></div>
                     </div>
                 </div>
             </div>
