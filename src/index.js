@@ -43,11 +43,7 @@ const router = createBrowserRouter([{
 
     },
     
-    {
-      path: "dashboard",
-      element: <Dashboard></Dashboard>
-
-    },
+    
     
     {
       path: "about-us",
@@ -57,7 +53,14 @@ const router = createBrowserRouter([{
 
   ]
 
-}])
+},
+{
+      path: "dashboard",
+      element: <Dashboard></Dashboard>
+
+    },   
+
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
