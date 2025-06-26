@@ -12,6 +12,8 @@ import Login from './components/login';
 import Signup from './components/signup';
 import AboutUs from './components/about';
 import Dashboard from './components/dashboard/dashboard';
+import Maindashboard from './components/dashboard/Maindashboard';
+import Mycourses from './components/dashboard/Mycourses';
 const router = createBrowserRouter([{
   path: '/',
   element: <App></App>,
@@ -55,8 +57,18 @@ const router = createBrowserRouter([{
 
 },
 {
-      path: "dashboard",
-      element: <Dashboard></Dashboard>
+      path: "/dashboard",
+      element: <Dashboard></Dashboard>,
+      children:[
+        {
+        path:'/dashboard',
+        element:<Maindashboard></Maindashboard>
+      },
+        {
+        path:'/dashboard/mycourses',
+        element:<Mycourses></Mycourses>
+      },
+    ]
 
     },   
 
