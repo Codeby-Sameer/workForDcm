@@ -11,7 +11,7 @@ const Topbar=()=>{
                             </button>
                         </li>
                         <li className="d-none d-lg-block">
-                            <h5 className="mb-0">Good Morning, Sam</h5>
+                            <h5 className="mb-0">Welcome  Sam</h5>
                         </li>
                     </ul>
 
@@ -60,7 +60,7 @@ const Topbar=()=>{
 
                         <li className="dropdown notification-list topbar-dropdown">
                             <a className="nav-link dropdown-toggle nav-user me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <img src="assets/images/users/user-13.jpg" alt="user" className="rounded-circle" />
+                                <img src="/img/users/user-13.jpg" alt="user" className="rounded-circle" />
                                 <span className="pro-user-name ms-1">Alex <i className="mdi mdi-chevron-down"></i></span>
                             </a>
                             <div className="dropdown-menu dropdown-menu-end profile-dropdown">

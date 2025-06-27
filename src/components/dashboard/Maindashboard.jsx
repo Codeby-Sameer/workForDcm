@@ -1,19 +1,45 @@
-const Maindashboard=()=>{
-    return<>
-     <div class="content-page">
+const Maindashboard = () => {
+    return <>
+        <div class="content-page">
             <div class="content">
+              
+
+
+
+
+                <div className="mb-5">
+                    
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhKzpW6bOe02wDN6Ahx4EH4uoT6qX0rYNWw&s" class="d-block w-100 " style={{ height: '250px' }} alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAhKzpW6bOe02wDN6Ahx4EH4uoT6qX0rYNWw&s" class="d-block w-100 " style={{ height: '250px' }} alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img src="data:image/jpeg;base64,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" class="d-block w-100 " style={{ height: '250px' }} alt="..." />
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
 
                 {/* <!-- Start Content--> */}
                 <div class="container-fluid">
-                    <div class="py-3 d-flex align-items-sm-center flex-sm-row flex-column">
-                        <div class="flex-grow-1">
-                            <h4 class="fs-18 fw-semibold m-0">Dashboard</h4>
-                        </div>
-                    </div>
+
 
                     {/* <!-- Start Main Widgets --> */}
                     <div class="row">
-                      
+
 
                         <div class="col-md-6 col-lg-4 col-xl">
                             <div class="card">
@@ -48,9 +74,9 @@ const Maindashboard=()=>{
                             </div>
                         </div>
 
-                   
 
-                       
+
+
 
                         <div class="col-md-12 col-lg-6 col-xl">
                             <div class="card">
@@ -94,7 +120,7 @@ const Maindashboard=()=>{
                     </div>
                     {/* <!-- End Main Widgets --> */}
 
-               
+
 
                     <div class="row">
                         <div class="col-xl-3">
@@ -155,7 +181,7 @@ const Maindashboard=()=>{
 
                         </div>
 
-                
+
                     </div>
                 </div>
                 {/* <!-- container-fluid --> */}
@@ -165,5 +191,5 @@ const Maindashboard=()=>{
 
         </div>
     </>
-} 
+}
 export default Maindashboard

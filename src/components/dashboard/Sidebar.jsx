@@ -1,6 +1,9 @@
-const Sidebar=()=>{
-    return<>
-      <div class="app-sidebar-menu">
+import { Link } from "react-router-dom"
+
+const Sidebar = () => {
+
+    return <>
+        <div class="app-sidebar-menu">
             <div class="h-100" data-simplebar>
 
                 {/* <!--- Sidemenu --> */}
@@ -30,40 +33,40 @@ const Sidebar=()=>{
                         <li class="menu-title">Menu</li>
 
                         <li className="ms-4">
-                            <a href="#sidebarDashboards" className="text-decoration-none" data-bs-toggle="collapse">
-                                
+                            <Link to='/dashboard' className="text-decoration-none" data-bs-toggle="collapse">
+
                                 <span> Dashboard </span>
-                                
-                            </a>
-                         
+
+                            </Link>
+
                         </li>
 
                         <li class="menu-title">Pages</li>
 
                         <li className="ms-4">
-                          <a href="#"className="text-decoration-none">My Courses</a>
-                    
-                        </li>
-                        <li className="ms-4">
-                          <a href="#"className="text-decoration-none">live Classes</a>
-                    
-                        </li>
-                        <li className="ms-4">
-                          <a href="#"className="text-decoration-none">Certificates</a>
-                    
-                        </li>
-                        <li className="ms-4">
-                          <a href="#"className="text-decoration-none"> Schedule / Calendar</a>
-                    
-                        </li>
-                        <li className="ms-4">
-                          <a href="#"className="text-decoration-none"> Settings
+                            <Link to='/dashboard/mycourses' className="text-decoration-none" >Enrolled Courses</Link>
 
-</a>
-                    
                         </li>
 
 
+                        <li className="ms-4">
+                            <a href="#" className="text-decoration-none"> Syllabus</a>
+
+                        </li>
+
+
+                        <li className="ms-4">
+                            <a href="#" className="text-decoration-none"> Settings
+
+                            </a>
+
+                        </li>
+                        <li className="ms-4">
+                            <a href="#" className="text-decoration-none"> Logout
+
+                            </a>
+
+                        </li>
                     </ul>
 
                 </div>
@@ -75,4 +78,4 @@ const Sidebar=()=>{
         </div>
     </>
 }
- export default Sidebar
+export default Sidebar

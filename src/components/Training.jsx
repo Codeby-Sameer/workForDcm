@@ -2,7 +2,7 @@ import Footer from "./footer";
 import data from "../data/data.json"
 const Trainings = () => {
 
-  const courses =data.courses
+  const courses = data.courses
   
  
   return (
