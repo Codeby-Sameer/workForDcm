@@ -2,47 +2,47 @@
   "courses": [
     {
       "title": "Java Full Stack",
-      "img": "img/java-svgrepo-com.svg",
+      "img": "/img/java-svgrepo-com.svg",
       "description": "Master both front-end and back-end development using Java technologies. Learn Spring Boot, REST APIs, and database integration to build complete web applications."
     },
     {
       "title": "Machine Learning",
-      "img": "img/machine-learning.svg",
+      "img": "/img/machine-learning.svg",
       "description": "Understand supervised and unsupervised learning, build predictive models, and apply algorithms like regression, decision trees, and neural networks."
     },
     {
       "title": "Data Analytics",
-      "img": "img/data-analytics.svg",
+      "img": "/img/data-analytics.svg",
       "description": "Learn to effectively clean, process, and visualize data using tools like Python, Excel, and Tableau. Analyze trends, create dashboards, and make data-driven decisions."
     },
     {
       "title": "Data Security",
-      "img": "img/data-security.svg",
+      "img": "/img/data-security.svg",
       "description": "Protect sensitive information with security protocols, cryptography, and ethical hacking techniques. Understand how to prevent breaches and threats."
     },
     {
       "title": "Artificial Intelligence",
-      "img": "img/artificial-intelligence.svg",
+      "img": "/img/artificial-intelligence.svg",
       "description": "Explore the foundations of AI including NLP, computer vision, and deep learning. Build intelligent systems that can perceive, reason, and act."
     },
     {
       "title": "React JS",
-      "img": "img/react-svgrepo-com.svg",
+      "img": "/img/react-svgrepo-com.svg",
       "description": "Build interactive user interfaces using modern JavaScript and React. Learn component architecture, hooks, routing, and state management."
     },
     {
       "title": "Web Development",
-      "img": "img/web-development-svgrepo-com.svg",
+      "img": "/img/web-development-svgrepo-com.svg",
       "description": "Get hands-on with HTML, CSS, JavaScript, and modern frameworks to create responsive and dynamic websites from scratch."
     },
     {
       "title": "Node JS",
-      "img": "img/nodejs-1-logo-svgrepo-com.svg",
+      "img": "/img/nodejs-1-logo-svgrepo-com.svg",
       "description": "Develop scalable server-side applications with Node.js. Learn Express.js, RESTful APIs, and real-time communication using WebSockets."
     },
     {
       "title": "JavaScript",
-      "img": "img/javascript-svgrepo-com.svg",
+      "img": "/img/javascript-svgrepo-com.svg",
       "description": "Deep dive into core JavaScript concepts including ES6, DOM manipulation, asynchronous programming, and browser APIs."
     }
   ]
