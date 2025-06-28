@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
 
+
 const Sidebar = () => {
+
+
+
+    
 
     return <>
         <div class="app-sidebar-menu">
@@ -12,18 +17,18 @@ const Sidebar = () => {
                     <div class="logo-box">
                         <a class='logo logo-light' href='index.html'>
                             <span class="logo-sm">
-                                <img src="/img/logo-sm.png" alt="" height="22" />
+                                <img src="/img/logo-color.png" alt="" height="22" />
                             </span>
                             <span class="logo-lg">
-                                <img src="/img/logo-light.png" alt="" height="24" />
+                                <img src="img/logo-color.png" alt="" height="24" />
                             </span>
                         </a>
                         <a class='logo logo-dark' href='index.html'>
                             <span class="logo-sm">
-                                <img src="/img/logo-sm.png" alt="" height="22" />
+                                <img src="img/logo-color.png" alt="" height="22" />
                             </span>
                             <span class="logo-lg">
-                                <img src="/img/logo-dark.png" alt="" height="24" />
+                                <img src="img/logo-color.png" alt="" height="24" />
                             </span>
                         </a>
                     </div>
@@ -32,10 +37,10 @@ const Sidebar = () => {
 
                         <li class="menu-title">Menu</li>
 
-                        <li className="ms-4">
-                            <Link to='/dashboard' className="text-decoration-none" data-bs-toggle="collapse">
-
-                                <span> Dashboard </span>
+                        <li className="ms-4 border-bottom  ">
+                            <Link to='/dashboard' className="text-decoration-none">
+                                <i data-feather='users'></i>
+                                 Dashboard 
 
                             </Link>
 
@@ -43,25 +48,29 @@ const Sidebar = () => {
 
                         <li class="menu-title">Pages</li>
 
-                        <li className="ms-4">
+                        <li className="ms-4 mb-2 border-bottom  ">
                             <Link to='/dashboard/mycourses' className="text-decoration-none" >Enrolled Courses</Link>
 
                         </li>
 
 
-                        <li className="ms-4">
-                            <a href="#" className="text-decoration-none"> Syllabus</a>
+                        <li className="ms-4 mb-2 border-bottom">
+                            <a href="#" className="text-decoration-none"> Syllabus
+
+                                                                
+                            </a>
+
 
                         </li>
 
 
-                        <li className="ms-4">
+                        <li className="  ms-4 mb-2 border-bottom  ">
                             <a href="#" className="text-decoration-none"> Settings
 
                             </a>
 
                         </li>
-                        <li className="ms-4">
+                        <li className="ms-4 mb-2 border-bottom border-1 ">
                             <a href="#" className="text-decoration-none"> Logout
 
                             </a>
