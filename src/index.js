@@ -14,7 +14,6 @@ import AboutUs from './components/about';
 import Dashboard from './components/dashboard/dashboard';
 import Maindashboard from './components/dashboard/Maindashboard';
 import Mycourses from './components/dashboard/Mycourses';
-import Setting from './components/dashboard/setting';
 const router = createBrowserRouter([{
   path: '/',
   element: <App></App>,
@@ -46,13 +45,21 @@ const router = createBrowserRouter([{
 
     },
     
-    
-    
+
     {
       path: "about-us",
       element: <AboutUs></AboutUs>
 
+    },
+    {
+      path:"man-power",
+      element:<ManPower></ManPower>
+    },
+    {
+      path:"Consultancy",
+      element:<Consultancy></Consultancy>
     }
+    
 
   ]
 

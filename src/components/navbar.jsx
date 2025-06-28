@@ -32,10 +32,10 @@ const Navbar=()=>{
                         <li><Link to="/"> Home</Link >
                           
                         </li>
-                        <li><a href="services.html" class="dropdown-toggle">Services</a>
+                        <li><Link to="/" class="dropdown-toggle">Services</Link>
                              <ul class="sub-menu">
-                            <li><a href="team.html">Consultancy Services </a></li>
-                            <li><a href="team-single.html">Manpower Support</a></li>
+                            <li><Link to="Consultancy">Consultancy Services </Link></li>
+                            <li><Link to="man-power">Manpower Support</Link></li>
                              </ul>
                         
                         </li>
