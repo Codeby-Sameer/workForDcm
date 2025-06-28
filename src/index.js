@@ -14,6 +14,11 @@ import AboutUs from './components/about';
 import Dashboard from './components/dashboard/dashboard';
 import Maindashboard from './components/dashboard/Maindashboard';
 import Mycourses from './components/dashboard/Mycourses';
+import ManPower from './components/ManPower';
+import Consultancy from './components/Consultancy';
+import Setting  from './components/dashboard/setting';
+
+
 const router = createBrowserRouter([{
   path: '/',
   element: <App></App>,
