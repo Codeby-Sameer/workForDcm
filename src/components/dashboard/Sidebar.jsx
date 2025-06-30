@@ -38,8 +38,8 @@ const Sidebar = () => {
                         <li class="menu-title">Menu</li>
 
                         <li className="ms-4 border-bottom  ">
-                            <Link to='/dashboard' className="text-decoration-none">
-                                <i data-feather='users'></i>
+                            <Link to='/dashboard' className="text-decoration-none ">
+                                <i data-feather='home' className="" ></i>
                                  Dashboard 
 
                             </Link>
@@ -49,13 +49,17 @@ const Sidebar = () => {
                         <li class="menu-title">Pages</li>
 
                         <li className="ms-4 mb-2 border-bottom  ">
-                            <Link to='/dashboard/mycourses' className="text-decoration-none" >Enrolled Courses</Link>
+                            <Link to='mycourses' className="text-decoration-none" >
+                            <i data-feather="book-open"></i>
+                            Enrolled Courses</Link>
 
                         </li>
 
 
                         <li className="ms-4 mb-2 border-bottom">
-                            <a href="#" className="text-decoration-none"> Syllabus
+                            <a href="#" className="text-decoration-none"> 
+                               <i data-feather='book'></i>
+                                Syllabus
 
                                                                 
                             </a>
@@ -65,13 +69,15 @@ const Sidebar = () => {
 
 
                         <li className="  ms-4 mb-2 border-bottom  ">
-                            <a href="#" className="text-decoration-none"> Settings
+                            <Link to='settings' className="text-decoration-none">
+                            <i data-feather="settings"></i> Settings
 
-                            </a>
+                            </Link>
 
                         </li>
                         <li className="ms-4 mb-2 border-bottom border-1 ">
-                            <a href="#" className="text-decoration-none"> Logout
+                            <a href="#" className="text-decoration-none"> 
+                                <i data-feather="log-out"> </i>Logout
 
                             </a>
 
