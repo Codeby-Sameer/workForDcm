@@ -88,6 +88,35 @@ const Mycourses = () => {
                 {/* <!-- end card--> */}
             </div>
             {/* <!-- end col --> */}
+const Mycourses=()=>{
+    const courses=data.enrollcourses
+    
+    return<div className="content-page">
+<h3 className="m-3">Enrolled Courses</h3>
+                            <div className="row m-2">                           
+                           {courses.map((course,index)=>{
+                            return  <div class="col-sm-6 col-xl-3">
+                                    <div class="card d-block">
+                                    <img class="card-img-top rounded-top" style={{height:"200px"}} src={course.img} alt="Card image cap"/>
+                                    <div class="card-body">
+                                        <h4 class="card-title">{course.coursesName}</h4>
+                                        <p class="card-text text-muted">Some quick example text to build on the card..</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Cras justo odio</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="javascript: void(0);" class="card-link fw-medium">Card link</a>
+                                        <a href="javascript: void(0);" class="card-link fw-medium">Another link</a>
+                                    </div>
+                                     {/* <!-- end card-body--> */}
+                                </div>
+                                 {/* <!-- end card--> */}
+                            </div>
+                           })}
+
+
+                            {/* <!-- end col --> */}
 
 
 

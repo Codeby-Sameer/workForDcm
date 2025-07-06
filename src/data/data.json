@@ -45,5 +45,21 @@
       "img": "/img/javascript-svgrepo-com.svg",
       "description": "Deep dive into core JavaScript concepts including ES6, DOM manipulation, asynchronous programming, and browser APIs."
     }
-  ]
+  ],
+  "enrollcourses":[{
+    "id":"Java",
+    "img":"/img/javaImg.png",
+    "coursesName":"Java"
+  },
+  {
+    "id":"Data-Analitics",
+    "img":"/img/dataAnalitics.png",
+    "coursesName":"Data Analitics"
+  },{
+    "id":"AI-Ml",
+    "img":"/img/machineLearning.png",
+    "coursesName":"AI&ML"
+  }
+]
+
 }
