@@ -1,7 +1,8 @@
 const Setting=()=>{
     return<>
-    <div className="content-page">
-        <h4>Settings</h4>
+    <div className="content-page bg-light">
+       <div className="m-3 p-3">
+         <h4>Settings</h4>
         <div class="tab-pane pt-4" id="profile_setting" role="tabpanel">
                                                 <div class="row">
 
@@ -113,8 +114,8 @@ const Setting=()=>{
 
                                                                     <div class="form-group row">
                                                                         <div class="col-lg-12 col-xl-12">
-                                                                            <button type="submit" class="btn btn-primary mb-2 mb-md-0">Change Password</button>
-                                                                            <button type="button" class="btn btn-danger">Cancel</button>
+                                                                            <button type="submit" class="btn btn-primary ">Change Password</button>
+                                                                            <button type="button" class="btn btn-danger m-4">Cancel</button>
                                                                         </div>
                                                                     </div>
 
@@ -126,6 +127,7 @@ const Setting=()=>{
                                                     </div>
                                                 </div>
                                             </div> 
+       </div>
     </div>
 
     </>

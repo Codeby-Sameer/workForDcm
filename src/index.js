@@ -17,6 +17,8 @@ import Mycourses from './components/dashboard/Mycourses';
 import ManPower from './components/ManPower';
 import Consultancy from './components/Consultancy';
 import Setting  from './components/dashboard/setting';
+import Syllabus from './components/dashboard/syllabus';
+import Calendar from './components/dashboard/calender';
 
 
 const router = createBrowserRouter([{
@@ -84,6 +86,14 @@ const router = createBrowserRouter([{
         {
         path:'/dashboard/settings',
         element:<Setting></Setting>
+      },
+        {
+        path:'/dashboard/syllabus',
+        element:<Syllabus></Syllabus>
+      },
+        {
+        path:'/dashboard/calendar',
+        element:<Calendar></Calendar>
       },
     ]
 
